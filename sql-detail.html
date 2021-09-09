@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="zh">
+<head>
+    <title>foolboys</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="stylesheet"
+          href="assets/css/atom-one-dark.min.css">
+    <link rel="stylesheet" href="assets/css/noscript.css"/>
+    <link rel="stylesheet" href="assets/css/detail.css"/>
+    <link rel="stylesheet" href="assets/bootstrap-3.4.1-dist/css/bootstrap.min.css"/>
+</head>
+<script type="text/javascript" src="assets/js/highlight.min.js"></script>
+<script type="text/javascript" src="assets/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+
+<body class="is-preload">
+
+<!-- Header -->
+<section id="header">
+    <div class="inner col-lg-2">
+        <span class="icon solid major fa-cloud"></span>
+        <h1><strong>java</strong> 系列</h1>
+    </div>
+    <div class="inner col-lg-5">
+        <ul>
+            <li><a onclick="read('./docs/go学习day01.md')">
+                <span class="glyphicon glyphicon-hand-right">GO语言学习</span></a>
+            </li>
+        </ul>
+    </div>
+    <div class="inner col-lg-5">
+
+    </div>
+
+</section>
+<section id="content">
+
+</section>
+<section id="footer">
+    <ul class="icons">
+        <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+        <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+        <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+        <li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+    </ul>
+    <ul class="copyright">
+        <li>&copy; foolboys 2021-</li>
+        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    </ul>
+</section>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/marked.min.js"></script>
+</body>
+<script type="text/javascript">
+    $(function () {
+        read('./docs/go学习day01.md')
+    })
+
+    function read(data) {
+        $.get(data, function (res) {
+            $("#content").html(marked(res));
+            hljs.highlightAll();
+        })
+    }
+</script>
+</html>
