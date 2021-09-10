@@ -9,3 +9,11 @@
 ul li{
     list-style: none;
 }
+
+.title{
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+#header{
+    padding: 4em 0 6em 0;
+}
