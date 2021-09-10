@@ -33,10 +33,13 @@
         <span class="icon solid major fa-cloud"></span>
         <h1><strong>Go</strong> 系列</h1>
     </div>
-    <div class="inner col-lg-5">
+    <div class="inner col-lg-5 text-left">
         <ul>
-            <li><a onclick="read('./docs/go学习day01.md')">
-                <span class="glyphicon glyphicon-hand-right">GO语言学习</span></a>
+            <li><a onclick="read('./docs/go/go学习笔记01.md')">
+                <span class="glyphicon glyphicon-hand-right"> GO语言初识</span></a>
+            </li>
+            <li><a onclick="read('./docs/go/go学习笔记02.md')">
+                <span class="glyphicon glyphicon-hand-right"> GO语言基本类型</span></a>
             </li>
         </ul>
     </div>
@@ -61,7 +64,9 @@
         <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
     </ul>
 </section>
-
+<div id="back-top" title="回到顶部">
+    <a href="#"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+</div>
 <!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -75,7 +80,7 @@
 </body>
 <script type="text/javascript">
     $(function () {
-        read('./docs/go学习day01.md')
+        read('./docs/go/go学习笔记01.md')
     })
 
     function read(data) {
