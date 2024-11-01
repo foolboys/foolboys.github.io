@@ -1,7 +1,6 @@
 module.exports = {
   "title": "foolboy's blog",
   "description": "个人博客",
-  "base":"/foolboys.github.io/",
   "head": [
     [
       "link",
