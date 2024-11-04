@@ -55,9 +55,7 @@ module.exports = {
         "sidebar": {
             "/docs/java/": [
                 "",
-                "theme",
-                "plugin",
-                "api"
+                "Redisson分布式锁注意事项"
             ],
             "/docs/sql/": [
                 ""
