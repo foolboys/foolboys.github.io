@@ -61,7 +61,7 @@ module.exports = {
                 "MybatisPlus配置字段属性填充",
                 "RSA加密常用工具类",
                 "springboot返回字典值自动映射",
-                "springboot方法拦截器(基于aop)",
+                "springboot方法拦截器-基于aop",
                 "Springboot取消过滤器注册",
                 "url参数拼接",
                 "拦截器配合注解解析SPEL表达式",

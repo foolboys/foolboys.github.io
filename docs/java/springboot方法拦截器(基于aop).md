@@ -1,9 +1,10 @@
 ---
-title: springboot方法拦截器(基于aop)
+title: springboot方法拦截器-基于aop
 date: 2024-11-04
 tags:
   - 拦截器
 ---
+
 ## 1. 引入aop依赖
 ```xml
 <dependency>  
