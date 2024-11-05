@@ -1,7 +1,7 @@
 ---
 home: true
 heroText: 傻小子的博客
-tagline: A simple and beautiful vuepress blog theme.
+tagline: stay hangury stay foolish
 heroImage: /hero.png
 heroImageStyle: {
   maxWidth: '600px',
