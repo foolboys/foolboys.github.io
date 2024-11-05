@@ -55,7 +55,19 @@ module.exports = {
         "sidebar": {
             "/docs/java/": [
                 "",
-                "Redisson分布式锁注意事项"
+                "Redisson分布式锁注意事项",
+                "springboot整合mapstruct",
+                "java过滤器拦截器中添加请求header",
+                "MybatisPlus配置字段属性填充",
+                "RSA加密常用工具类",
+                "springboot返回字典值自动映射",
+                "springboot方法拦截器(基于aop)",
+                "Springboot取消过滤器注册",
+                "url参数拼接",
+                "拦截器配合注解解析SPEL表达式",
+                "利用jdk的keytool生成RSA证书",
+                "输出进度条",
+                "修改excel单元格"
             ],
             "/docs/sql/": [
                 ""
