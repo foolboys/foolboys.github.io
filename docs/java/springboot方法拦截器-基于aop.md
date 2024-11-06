@@ -79,4 +79,4 @@ public class InterceptorConfig {
 
 ## 4. 访问测试
 
-![Pasted image 20230625174747](image/Pasted%20image%2020230625174747.png)
+![Pasted image 20230625174747](https://gitee.com/isfoolboy/image/raw/master/202411061012662.png)
