@@ -10,7 +10,7 @@ tags:
 ```bash
 keytool -genkeypair -alias test -validity 36500 -keyalg RSA -dname "CN=jwt,OU=jtw,O=jwt,L=zurich,S=zurich, C=CH" -keypass 123456 -keystore test.keystore -storepass 123456
 ```
- 
+
 或者省略-dname参数（执行命令时会再次提示输入）：
 ```bash
 keytool -genkeypair -alias test -validity 36500 -keyalg RSA -keypass 123456 -keystore test.jks -storepass 123456
@@ -52,13 +52,14 @@ URL: http://slproweb.com/products/Win32OpenSSL.html
 `JKS 密钥库使用专用格式。建议使用 "keytool -importkeystore -srckeystore test.jks -destkeystore test.jks -deststoretype pkcs12" 迁移到行业标准格式 PKCS12。`
 
 此时，安装提示的命令，再执行一下即可，整个过程如下：
-![[Pasted image 20230421161618.png]]
+![Pasted image 20230421161618](https://gitee.com/isfoolboy/image/raw/master/202411061020114.png)
+
 # 3.使用openssl查看公钥
 ```bash
 keytool -list -rfc --keystore test.jks | openssl x509 -inform pem -pubkey
 ```
 生成的公钥如下（-----BEGIN PUBLIC KEY----- 和 -----END PUBLIC KEY----- 之间的是公钥，包括这两个头和尾）
-![[Pasted image 20230421162103.png]]
+![Pasted image 20230421162103](https://gitee.com/isfoolboy/image/raw/master/202411061020744.png)
 # 3. 从JKS或者keystore文件，导出公钥publickey.cer证书
 执行命令：
 ```
